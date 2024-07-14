@@ -37,8 +37,37 @@ for(var i=10; i>=1; i--){
     document.write(i + ", ");
 }
 
-//--------------------QUESTION 07---------------------//
+document.write("<br> Even number <br>");
+for(var i=1; i<=20; i++){
+    if (i % 2 == 0) {
+        document.write(i + ", ");  
+    }
+}
 
+document.write("<br> Odd number <br>");
+for(var i=1; i<=20; i++){
+    if (i % 2 == 1) {
+        document.write(i + ", ");  
+    }
+    
+}
+
+document.write("<br> Series <br>");
+for(var i=1; i<=20; i++){
+    if (i % 2 == 0) {
+        document.write(i + "k, ");  
+    }
+}
+document.write("<br><br>");
+//--------------------QUESTION 07---------------------//
+var list = ["cake", "apple pie", "cookie", "chips", "patties"];
+var userInput = prompt("Welcome to our bakery! What you want to order...");
+userInput = userInput.toLowerCase();
+if (userInput == "cake" || userInput == "apple pie" || userInput == "cookie" || userInput == "chips" ||userInput == "patties" ) {
+    alert(userInput + " is available.")
+} else {
+    alert(userInput + " is not available.") 
+}
 //--------------------QUESTION 08---------------------//
 let A = [24, 53, 78, 91, 12];
 let largest = A[0];
